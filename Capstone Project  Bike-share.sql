@@ -2,6 +2,7 @@
  Skills used in this project are : joins, temp table, views, subqueries, case statement
 */
 
+-- The Dashboard: https://public.tableau.com/views/CyclisticBike-ShareDashboard_16306987230160/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link
 
 
 # let's have a glimpse at the 1st table
@@ -210,3 +211,4 @@ limit 3;
 
 
 ## I'll bring the view to tableau for visual insight. So excited !!!
+Please
