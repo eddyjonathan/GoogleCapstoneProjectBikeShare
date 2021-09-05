@@ -112,9 +112,9 @@ select * from cyclistic.final_table;
 #Q1 : which type of user use mostly the cycle on average ?
 
 
-Select usertype,
+select usertype,
         round(avg(tripduration),2) as average_usage
-from `eddy-project-317819.cyclistic.final_table`
+from cyclistic.final_table
 group by 1
 order by 2 desc;
 
@@ -127,7 +127,7 @@ order by 2 desc;
 Select usertype,
         days_of_week,
         round(avg(tripduration),2) as average_usage
-from `eddy-project-317819.cyclistic.final_table`
+from cyclistic.final_table
 group by 1,2;
 
 
@@ -144,7 +144,7 @@ from
         Select usertype,
         days_of_week,
         round(avg(tripduration),2) as average_usage
-from `eddy-project-317819.cyclistic.final_table`
+from cyclistic.final_table
 group by 1,2
 )
 group by 1,2
@@ -175,7 +175,7 @@ order by 3 desc ;
 
 select usertype,
     days_of_week,
-    count(usertype)
+    count(usertype) as count
 from cyclistic.final_table
 where stime >= '07:00:00' and etime <= '09:00:00'
 group by 1,2
